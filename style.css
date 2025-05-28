@@ -1,0 +1,334 @@
+/* General Styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+h1, h2, h3 {
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff; /* Example link color */
+}
+
+/* Header */
+header {
+    background-color: #f8f9fa; /* Light grey background */
+    border-bottom: 1px solid #e7e7e7;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.cta-button {
+    background-color: #28a745; /* Green */
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #218838; /* Darker green */
+}
+
+/* Hero Section */
+.hero {
+    position: relative; /* Needed for overlay positioning */
+    background-image: url("hero_background.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Changed text to white for better contrast */
+    text-align: center;
+    padding: 80px 0; /* Increased padding */
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative; /* Ensure content is above overlay */
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 2.8em; /* Slightly larger */
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7); /* Add text shadow */
+}
+
+.hero p {
+    font-size: 1.2em; /* Slightly larger */
+    margin-bottom: 15px; /* Reduced margin for offer */
+    max-width: 700px; /* Limit width for readability */
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7); /* Add text shadow */
+}
+
+.hero .offer {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #ffc107; /* Yellow color for offer */
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+}
+
+.cta-button-large {
+    background-color: #007bff; /* Blue */
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button-large:hover {
+    background-color: #0056b3; /* Darker blue */
+}
+
+/* Services Section */
+.services {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 30px;
+}
+
+.service-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    width: 30%;
+    min-width: 280px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* About Us Section */
+.about-us {
+    background-color: #f8f9fa; /* Light background */
+    padding: 40px 0;
+    text-align: center;
+}
+
+.about-us h2 {
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1em;
+}
+
+/* Gallery Section */
+.gallery {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.gallery h2 {
+    margin-bottom: 30px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    border: 1px solid #eee;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gallery-item h3 {
+    font-size: 1.1em;
+    padding: 10px;
+    margin: 0;
+    background-color: #f8f9fa;
+}
+
+/* Map Section */
+.map-section {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #f8f9fa; /* Match About Us background */
+}
+
+.map-section h2 {
+    margin-bottom: 20px;
+}
+
+.map-embed {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #eee;
+    border: 1px solid #ccc;
+}
+
+.map-embed iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Contact Form Section */
+.contact-form {
+    background-color: #e9ecef; /* Slightly different background */
+    padding: 40px 0;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-form form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="tel"],
+.contact-form input[type="email"],
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.contact-form button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    display: block;
+    width: 100%;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40; /* Dark background */
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 0; /* Removed margin-top as sections have padding */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+    header .logo {
+        margin-bottom: 10px;
+    }
+    .service-items {
+        flex-direction: column;
+        align-items: center;
+    }
+    .service-item {
+        width: 80%;
+    }
+    .hero h1 {
+        font-size: 2.2em;
+    }
+    .hero p {
+        font-size: 1.1em;
+    }
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8em;
+    }
+    header .logo {
+        font-size: 1.2em;
+    }
+    .cta-button {
+        width: 80%;
+        text-align: center;
+    }
+    .gallery-grid {
+        grid-template-columns: 1fr; /* Stack gallery items */
+    }
+}
+
