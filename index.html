@@ -62,7 +62,8 @@
 </header>
 
 <section class="hero">
-  <div class="container">
+  <div class="container hero-split">
+    <div class="hero-left">
     <h1>Custom Kitchen Cabinets<br><span>in Pembroke Pines, FL</span></h1>
     <p class="hero-sub">Custom kitchen cabinets designed and built for Pembroke Pines homes — from Chapel Trail to Silver Lakes.</p>
     <div class="hero-badges">
@@ -71,8 +72,33 @@
       <span class="badge">✓ Free 3D Design</span>
       <span class="badge">✓ Family-Owned Since 2013</span>
     </div>
-    <a href="tel:7866240742" class="btn-hero">Call for a Free Estimate</a>
-    <p class="hero-note">Or fill out the form below — we respond within 2 business hours</p>
+    </div>
+    <div class="hero-right">
+      <div class="hero-form-card">
+        <p class="hero-form-title">Get a Free Estimate</p>
+        <p class="hero-form-sub">We respond within 2 business hours</p>
+        <form action="https://acacia-estimator.vercel.app/api/landing-lead" method="POST">
+          <input type="hidden" name="_next" value="https://www.pembrokepineskitchencabinets.com/thank-you.html">
+          <input type="hidden" name="_subject" value="New Lead - Pembroke Pines Kitchen Cabinets">
+          <input type="text" style="display:none" name="_honey">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="tel" name="phone" placeholder="Phone Number" required>
+          <input type="email" name="email" placeholder="Email Address" required>
+          <select name="project_type">
+            <option value="">Project Type</option>
+            <option>Kitchen Cabinets</option>
+            <option>Kitchen Remodeling</option>
+            <option>Bathroom Vanity</option>
+            <option>Custom Closet</option>
+            <option>Wall Unit / Built-In</option>
+            <option>Multiple / Not Sure</option>
+          </select>
+          <button type="submit" class="btn-hero-form">Request Free Estimate →</button>
+        </form>
+        <p class="hero-form-note-sm">No spam. No obligation.</p>
+        <a href="tel:7866240742" class="hero-phone-link">Or call us: <strong>(786) 624-0742</strong></a>
+      </div>
+    </div>
   </div>
 </section>
 
